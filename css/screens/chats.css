@@ -1,0 +1,60 @@
+/**연습하는 겸 만든 components.css이므로 실제 작업할 시에는 user-component를 활용하여 작업하는 것이 좋다.**/ 
+/**비슷한 요소(component)들을 공유하는 화면들 작업 시에는 class 적용을 적절히 하여 한 components
+   페이지에 효율적으로 styling 할 수 있어야한다**/ 
+.chats-component{
+    justify-content: space-between;
+    
+}
+
+/**2개의 user-component__column 중 첫번째-사진과 TEXT 포함**/
+.chats-component, .chats-component__column:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.chats-component__avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin-right: 15px;
+  
+}
+
+.chats-component__title{
+    font-size: 22px;
+}
+.chats-component__subtitle{
+    margin-top: 5px;
+    color: rgb(0, 0, 0,0.5);
+}
+
+
+.chats-component__column{
+    padding: 0px var(--horizontal-space);
+}
+
+.chats-component__chat-title{
+    font-size: 18px;
+    color: black;
+}
+
+.chats-component__side-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: var(--horizontal-space);
+    color: rgb(0, 0, 0,0.5);
+}
+
+.chats-component__arrive-number{
+    background-color: tomato;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    font-size: smaller;
+    margin-top: 5px;
+}
